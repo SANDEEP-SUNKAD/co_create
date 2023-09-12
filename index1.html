@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Co-create</title>
+    <style>
+        .body{
+            background-image: url(back.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .div1{
+            width: 350px;
+            margin: auto;  /* for aligning center */
+            margin:10 0 0 450px;
+            overflow: hidden; /* the extra content that moves out of the box will be hidden*/
+            padding: 75px;
+            background-color: #ffcc80;
+
+        }
+
+        .inputtext{
+            width: 300px;
+            height: 30px;
+            border-radius: 10px;
+            border: none;
+            padding-left: 8px;
+
+        }
+
+        h2{
+            text-align: center;
+            padding: 10px;
+            color:black;
+        }
+
+        label{
+            color:black;
+            width: 200px;
+            padding-left: 10px;
+        }
+
+        #log_button{
+            width:100px;
+            height: 50px;
+            border: none;
+            border-radius: 15px;
+            padding-left: 1px;
+            color: black;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body class="body">
+    <h2>Login Information</h2>
+    <br/>
+    <div class="div1">
+        <form action="login" name="web" method="post">
+            <label>UserName</label>
+            <input type="text" class="inputtext" placeholder="Username" name="name" required="*"/>
+
+            <br/>
+            <br/>
+
+            <label>Password</label>
+            <input type="password" class="inputtext" placeholder="Password" name="password" required="*"/>
+
+            <br/>
+            <br/>
+            <br/>
+            
+            <a href="http://127.0.0.1:5500/co%20create/index3.html">
+                <input type="button" name="login" id="logbutton" value="Login" width="300px"/>
+                <br/>
+            </a>
+
+        </form>
+    </div>
+    
+</body>
+</html>

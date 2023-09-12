@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CO-CREATE</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        header{
+            background-image: url(back.jpg);
+            height:100vh;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        ul{
+            list-style: none;
+            margin-top: 25px;
+            float: right;
+        }
+
+        ul li{
+            display: inline-block; /*displays in single line*/
+        }
+
+        ul li a{
+            text-decoration: none;
+            color: #fff;
+            padding: 5px 20px;
+            transition: 0.6s ease; /*change of state of element*/
+            border:1px solid transparent;
+        }
+
+         /* ul li a:hover{
+            background-color: #fff;
+            color:black; 
+        } */
+
+        .logo img{ /* particularly for image*/
+            float:left; 
+            width:90px;
+            border-radius: 10px;
+            margin-top: 10px; 
+            
+            height:auto;
+           
+        }
+
+         .main{
+            max-width: 1200px;
+            margin: auto; 
+        }
+
+        ul li.active a{
+            background-color: black;
+            color: white;
+            border-radius: 2px;
+        }
+
+        ul li a:hover{
+            transition: 0.6s ease;
+            background-color: #c9d4d4;
+            color:black;
+        }
+
+        .title h1{
+            color: black;
+            font-size: 70px;
+        }
+
+        .title{
+            color:black;
+            position: absolute;
+            top: 50%;
+            left:50%;
+            transform: translate(-50%,-50%); /*for aligning center*/
+         }
+        
+        .button{
+            position:absolute;
+            top:62%;
+            left:50%;
+            transform:translate(-50%,50%);
+        }
+
+        .btn{
+            border: 1px solid white;
+            padding: 10px 30px;
+            color:black;
+            font-weight: 400;
+            text-decoration: none;
+            transition: 0.6s ease;
+        }
+
+        .btn:hover{
+            background-color: black;
+            color:white;
+            border-radius: 5px;
+        }
+
+        .web{
+            color:black;
+            font-size: 40px;
+
+        }   
+    </style>
+</head>
+<body>
+    <header>
+        <div class="main">
+            <div class="logo">
+                <img src="logo.jpg"/>
+            </div>
+
+            <ul>
+                <li class="active"><a href="#">Home</a></li>
+                <li class="active">
+                    <a href="http://127.0.0.1:5500/co%20create/index6.html">Services</a>
+                </li>
+                <li class="active">
+                    <a href="http://127.0.0.1:5500/co%20create/index7.html">About</a>
+                </li>
+                <li class="active">
+                    <a href="http://127.0.0.1:5500/co%20create/index8.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="title">
+            <h1 class="web" width="100%">CO-CREATE</h1>
+        </div>
+
+        <div class="button">
+            <a href="http://127.0.0.1:5500/co%20create/index1.html" class="btn">Login</a>
+            <a href="http://127.0.0.1:5500/co%20create/index2.html" class="btn">Sign Up</a>
+        </div>
+    </header>
+</body>
+</html>

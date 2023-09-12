@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Co-create Funding Organisation</title>
+    <style>
+        .body{
+            background-image: url(back.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            /* height: 50%;  */
+        }
+
+        .div1{
+         border-color: rgb(130,126,126);
+         border-width: 5px;
+         border-style: double;
+         border-radius: 10px;
+         width:350px;
+         margin: auto;
+         margin: 10 0 0 450px;
+         overflow: hidden;
+         padding: 75px; 
+         background-color: #ffcc80;
+
+        }
+        h2{
+            text-align: center;
+            padding: 10px;
+            color: black;
+        }
+
+        label{
+            color: black;
+            /* width: 400px; 
+            height:30px;
+            border: none;
+            border-radius: 10px; */
+            padding-left: 8px;
+        }
+
+        .input_text{
+            width: 300px;
+            height: 30px;
+            border:none;
+            border-radius: 10px;
+            padding-left: 8px;
+        }
+
+        #log_button{
+            width: 100px;
+            height: 30px;
+            border: none;
+            border-radius: 15px;
+            padding-left: 1px;
+            color: black;
+            font-size: 16px;
+        }
+
+    </style>
+</head>
+<body class="body">
+    <h2>Registration</h2>
+    <br/>
+    <div class="div1">
+        <form action="login" name="web" method="post">
+            <label>First Name</label>
+            <input type="text" class="input_text" name="firstName" placeholder="Enter your First Name"/>
+            <!-- placeholder tag is used for providing hint for the value to be entered in the input box -->
+            <br/>
+            <br/>
+            <label>Last Name</label>
+            <input type="text" class="input_text" name="LastName" placeholder="Enter the Last Name"/>
+            <br/>
+            <br/>
+            <label>Email</label>
+            <input type="email" class="input_text" name="email" placeholder="Enter you Email Address"/>
+            <br/>
+            <br/>
+            <label>Contact Number</label>
+            <input type="number" class="input_text" name="number" placeholder="Phone Number"/>
+            <br/>
+            <br/>
+            <label>UserName</label>
+            <input type="text" class="input_text" name="user" placeholder="Username"/>
+            <br/>
+            <br/>
+            <label>password</label>
+            <input type="password" class="input_text" name="pass" placeholder="Password"/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <a href="http://127.0.0.1:5500/co%20create/index1.html">
+                <input type="button" name="login" id="log_button" value="Register"  width="300px"/>
+                <br/>
+                
+            </a>
+        </form>
+    </div>
+         
+    
+</body>
+</html>
